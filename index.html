@@ -186,7 +186,7 @@
         </div>
     </footer>
     <!-- End Footer -->
-    <script>
+    <script defer src="/_vercel/insights/script.js">
         const cards = document.querySelectorAll(".card");
 
         const observer = new IntersectionObserver(
@@ -205,6 +205,9 @@
         cards.forEach((card) => {
         observer.observe(card);
         });
+
+window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+
 
     </script>
     <script src="script.js"></script>
